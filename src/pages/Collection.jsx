@@ -28,7 +28,9 @@ const Collection = () => {
         <img className={`h-3 sm:hidden ${showFilter ?'rotate-90' : '' }`} src={assets.dropdown_icon} />
 
          {/*Category Filter */}
-         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${setShowFilter ? '' : 'hidden'} sm:block`}>
+         <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? 'block' : 'hidden'}`}>
+
+
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
@@ -47,7 +49,8 @@ const Collection = () => {
 
 
              {/*Sub-Category Filter */}
-             <div className={`border border-gray-300 pl-5 py-3 my-5 ${setShowFilter ? '' : 'hidden'} sm:block`}>
+             <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? 'block' : 'hidden'}`}>
+
           <p className='mb-3 text-sm font-medium'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
